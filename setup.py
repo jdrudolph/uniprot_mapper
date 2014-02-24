@@ -1,7 +1,8 @@
 from distutils.core import setup
-setup(name='Uniprot mapper',
-		version='0.1',
-		packages=['uni_mapper'],
+setup(name='uniprot_mapper',
+		version='0.3',
+		py_modules=['uniprot_mapper'],
+		scripts=['uniprot_mapper'],
 
 		requires=['urllib','urllib2','argparse'],
 
@@ -10,4 +11,5 @@ setup(name='Uniprot mapper',
 		author_email='jan.daniel.rudolph@gmail.com',
 		description='Simple interface for uniprot.org/mapping',
 		url='https://github.com/jdrudolph/uniprot_mapper',
+		long_description=open('README').read(),
 		)
