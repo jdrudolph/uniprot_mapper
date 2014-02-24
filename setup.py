@@ -1,6 +1,6 @@
 from distutils.core import setup
 setup(name='uniprot_mapper',
-		version='0.3',
+		version='0.6',
 		py_modules=['uniprot_mapper'],
 		scripts=['uniprot_mapper'],
 
