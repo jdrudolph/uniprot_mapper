@@ -23,11 +23,10 @@ Clone the git repository
 
 	git clone https://github.com/jdrudolph/uniprot_mapper.git
 
-Make the script executable and add it to your `PATH`:
-	
-	chmod +x uniprot_mapper/uniprot_mapper/uniprot_mapper.py
-	cd /usr/local/bin
-	sudo ln -s /path/to/uniprot_mapper.py uniprot_mapper
+Use `distutils to install the package
+
+	cd uniprot_mapper
+	sudo python setup.py install
 
 ## Example
 
@@ -48,4 +47,4 @@ further
 ### inside a python script
 
 	import uniprot_mapper as mapper
-	print mapper.map('P31749')
+	print mapper.map('P31749', f='ACC', t='P_ENTREZGENEID')
